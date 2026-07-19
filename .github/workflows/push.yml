@@ -1,0 +1,35 @@
+name: Testes Smoke - ServeRest
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  smoke-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependências
+        run: |
+          pip install robotframework robotframework-requests robotframework-seleniumlibrary robotframework-faker
+
+      - name: Rodar testes Smoke
+        run: |
+          robot --outputdir results --include smoke tests
+
+      - name: Publicar relatório como artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: robot-report
+          path: results/
+          retention-days: 30
