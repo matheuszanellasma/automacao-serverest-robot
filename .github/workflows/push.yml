@@ -1,4 +1,4 @@
-name: Testes Smoke - ServeRest
+name: Testes Smoke
 
 on:
   push:
