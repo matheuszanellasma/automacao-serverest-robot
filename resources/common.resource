@@ -1,5 +1,5 @@
 *** Settings ***
-Library  SeleniumLibrary
+
 
 *** Variables ***
 ${WEB_URL}    https://front.serverest.dev
