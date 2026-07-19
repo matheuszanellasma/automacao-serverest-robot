@@ -12,7 +12,7 @@ Preparar ambiente autenticado
     Set Suite Variable    ${id_cadastro}    ${resposta_cadastro.json()}[_id]   # robotcode: ignore
     Set Suite Variable    ${token_autorizacao}     ${resposta_login.json()}[authorization]   # robotcode: ignore
 
-    Open Browser    ${WEB_URL}    chrome
+    Abrir navegador
     Injetar autenticação no navegador    ${nome}    ${email}    ${token_autorizacao}   # robotcode: ignore
 
 Injetar autenticação no navegador
