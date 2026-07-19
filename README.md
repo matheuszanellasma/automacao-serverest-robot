@@ -1,4 +1,4 @@
-[![CI](https://github.com/matheuszanellasma/automacao-serverest-playwright/actions/workflows/push.yml/badge.svg)](https://github.com/matheuszanellasma/automacao-serverest-playwright/actions)
+[![CI](https://github.com/matheuszanellasma/automacao-serverest-robot/actions/workflows/push.yml/badge.svg)](https://github.com/matheuszanellasma/automacao-serverest-robot/actions)
 
 # 🤖 Automação de Testes WEB e API da ServeRest com Robot Framework
 
@@ -64,7 +64,11 @@ Cada arquivo contém os casos de teste relacionados à sua funcionalidade, inclu
 
 ## ⚙️ Integração Contínua (CI/CD)
 
-*(a ser implementada — pipeline com GitHub Actions para execução dos testes Smoke a cada push na branch principal)*
+O projeto possui uma esteira automatizada de integração contínua implementada com **GitHub Actions**:
+
+- **Gatilho:** A esteira é disparada automaticamente a cada evento de `push` realizado na branch `master`.
+- **Ação:** O pipeline executa os testes **Smoke** 
+- **Armazenamento:** O relatório é armazenado como artifact no GitHub por **30 dias**, permitindo análise dos resultados mesmo após a conclusão do pipeline.
 
 ## 👤 Autor
 
