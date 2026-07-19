@@ -1,7 +1,7 @@
 *** Settings ***
 Resource  ../../resources/WEB/login_page.resource
 Resource  ../../resources/API/usuarios_API.resource
-Suite Setup       Open Browser    ${WEB_URL}    chrome
+Suite Setup       Abrir navegador
 Suite Teardown    Close Browser
 
 *** Test Cases ***
