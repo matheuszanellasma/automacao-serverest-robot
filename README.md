@@ -1,4 +1,5 @@
 [![CI](https://github.com/matheuszanellasma/automacao-serverest-robot/actions/workflows/push.yml/badge.svg)](https://github.com/matheuszanellasma/automacao-serverest-robot/actions)
+[![Badge ServeRest](https://img.shields.io/badge/API-ServeRest-green)](https://github.com/ServeRest/ServeRest/)
 
 # 🤖 Automação de Testes WEB e API da ServeRest com Robot Framework
 
